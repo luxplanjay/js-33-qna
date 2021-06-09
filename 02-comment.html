@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вопрос-ответ 8</title>
+    <title>Мастерская: комментарий</title>
     <style>
       * {
         box-sizing: border-box;
@@ -20,23 +20,19 @@
         background-color: #fff;
         color: #2a2a2a;
       }
+
+      textarea {
+        padding: 8px;
+        font: inherit;
+        resize: none;
+      }
     </style>
   </head>
   <body>
-    <ul>
-      <li>
-        <a href="01-palette.html">Мастерская: палитра</a>
-      </li>
-      <li>
-        <a href="02-comment.html">Мастерская: комментарий</a>
-      </li>
-      <li>
-        <a href="03-button.html">Мастерская: кнопка отправки</a>
-      </li>
-      <li>
-        <a href="04-lazy-images.html">Мастерская: отложенная загрузка</a>
-      </li>
-    </ul>
-    <script src="js/app.js" defer></script>
+    <p><a href="index.html">На главную</a></p>
+
+    <textarea id="comment" rows="5" cols="50"></textarea>
+
+    <script defer src="js/02-comment.js"></script>
   </body>
 </html>
