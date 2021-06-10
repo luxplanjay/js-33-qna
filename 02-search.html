@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мастерская: комментарий</title>
+    <title>Мастерская: поиск</title>
     <style>
       * {
         box-sizing: border-box;
@@ -21,7 +21,7 @@
         color: #2a2a2a;
       }
 
-      textarea {
+      .search-box {
         padding: 8px;
         font: inherit;
         resize: none;
@@ -31,8 +31,15 @@
   <body>
     <p><a href="index.html">На главную</a></p>
 
-    <textarea id="comment" rows="5" cols="50"></textarea>
+    <input type="text" class="search-box" autocomplete="off" />
+    <ul class="student-list"></ul>
 
-    <script defer src="js/02-comment.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="js/02-search.js"></script>
   </body>
 </html>
