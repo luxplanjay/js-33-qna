@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Protecting the outer rim",
+    "location": "Corvus, Jangala",
+    "start": "2022-02-17T14:30:00",
+    "speaker": "Jacob Mercer"
+  },
+  {
+    "name": "Art of spying",
+    "location": "Barad sector, Asharu",
+    "start": "2022-04-12T18:00:00",
+    "speaker": "Artemis Tau"
+  },
+  {
+    "name": "A smugglers tale",
+    "location": "Atzlan, Nachiketa",
+    "start": "2022-06-23T17:00:00",
+    "speaker": "Artemis Tau"
+  },
+  {
+    "name": "Dealing with the Diktat",
+    "location": "Duzhank, Sindria",
+    "start": "2022-09-03T12:30:00",
+    "speaker": "Solomon Fokes"
+  },
+  {
+    "name": "Inside the Ludd's Hammer",
+    "location": "Hybrasil, Culann",
+    "start": "2023-03-07T15:00:00",
+    "speaker": "Adrian Cross"
+  },
+  {
+    "name": "Beyond the core worlds",
+    "location": "Magec, Achaman",
+    "start": "2023-05-21T12:00:00",
+    "speaker": "Apollo Pillai"
+  },
+  {
+    "name": "Mining for profit",
+    "location": "Yma, Qaras",
+    "start": "2023-08-26T19:00:00",
+    "speaker": "Archibald Yurzi"
+  },
+  {
+    "name": "Deep space horrors",
+    "location": "Samarra, Eventide",
+    "start": "2023-11-02T18:30:00",
+    "speaker": "Luke Xamarin"
+  }
+]

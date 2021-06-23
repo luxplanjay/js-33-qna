@@ -1,0 +1,46 @@
+.event-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, max-content));
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-board .item {
+  padding: 12px;
+  border-radius: 4px;
+  border: 2px dashed #212121;
+  background-color: #fff;
+}
+
+.event-board .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.event-board .name {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.event-board .info {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
