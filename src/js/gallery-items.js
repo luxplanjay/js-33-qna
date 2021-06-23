@@ -1,0 +1,5 @@
+import throttle from 'lodash.throttle';
+
+export const galleryItems = [1, 2, 3, 4, 5];
+
+export default 5;
