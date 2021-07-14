@@ -1,15 +1,35 @@
-import { differenceInYears } from 'date-fns';
 import 'modern-normalize/modern-normalize.css';
-import './sass/modules/main/index.scss';
+import './css/styles.css';
+import Pagination from 'tui-pagination';
+import 'tui-pagination/dist/tui-pagination.min.css';
 
-const MS_PER_YEAR = 31_556_952_000;
+const pagination = new Pagination('#tui-pagination-container', {
+  totalItems: 0,
+  itemsPerPage: 20,
+  visiblePages: 5,
+  page: 1,
+});
 
-const month = 5;
-const day = 2;
-const year = 1980;
+const page = pagination.getCurrentPage();
+fetchImages(page).then(data => {
+  pagination.reset(data.total);
+  renderImages(data.images);
+});
 
-const birthDay = new Date(year, month - 1, day);
-const today = new Date();
+pagination.on('afterMove', event => {
+  const currentPage = event.page;
+  fetchImages(currentPage).then(data => renderImages(data.images));
+});
 
-console.log(Math.floor((today - birthDay) / MS_PER_YEAR));
-console.log(differenceInYears(today, birthDay));
+function fetchImages(page) {
+  return fetch(
+    `https://pixabay.com/api/?key=4823621-792051e21e56534e6ae2e472f&q=sun&page=${page}&per_page=20`
+  )
+    .then(res => res.json())
+    .then(data => ({ images: data.hits, total: data.totalHits }));
+}
+
+function renderImages(images) {
+  console.log('RENDER');
+  console.log(images);
+}
